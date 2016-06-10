@@ -1,0 +1,206 @@
+
+///////  Variables
+
+$global-font-family:          'Roboto'; 
+$global-font-size:            14px;
+$global-bg-color:             #fff;
+$global-color:                #83a7a5;
+$global-line-height:          22px;
+
+$headline-font-family:        'Roboto';
+$headline-font-weight:        400;
+$headline-line-height:        20px;
+$headline-color:              #0f5f5c;;
+
+$headline-font-size-h1:       38px;
+$headline-margin-h1:          0px 0px 10px 0px; 
+$headline-font-size-h1-bigger:   50px;
+$headline-line-height-h1-bigger: 60px;
+$headline-font-weight-h1-bigger: 300;
+
+$headline-font-size-h2:       32px;
+$headline-margin-h2:          0px 0px 15px 0px;
+$headline-secondary-color-h2: #6fb048;
+
+$headline-font-size-h3:       28px;
+$headline-margin-h3:          0;
+
+$headline-font-size-h4:       16px;
+$headline-margin-h4:          0 0 15px 0;
+
+$headline-font-size-h5:       13px;
+$headline-margin-h5:          0px 0px 20px 0px;
+
+$headline-font-size-h6:       12px;
+$headline-margin-h6:          10px 0;
+
+
+
+$paragraph-font-family:       Helvetica;
+$paragraph-line-height:       15px;
+$paragraph-color:             $global-color;
+$secondary-color:             #0f5f5c;
+$paragraph-font-sizes:  (
+							null  : 14px,
+							320px : 14px,
+							480px : 15px,
+							769px : 14px,
+							992px : 14px,
+							1200px: 14px
+						);
+
+
+
+$color-link:          rgba(255,255,255,0.7);
+$border-link:         #fff;
+$color-link-hover:    #fff;
+$border-link-hover:   #fff;
+$color-link-visited:  #767676;
+$border-link-visited: #949494;
+$color-link-active:   #fff;
+$border-link-active:  #fff;
+$link-font-family:    Montserrat; 
+$link-font-size:      13px;
+
+
+//////Body
+*{
+	box-sizing:border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: $global-font-family;
+	line-height: $global-line-height;
+	font-size: $global-font-size;
+	background: $global-bg-color;
+	color: $global-color;
+
+}
+
+/// Headlines
+
+h1,h2,h3,h4,h5,h6 {
+	line-height: $headline-line-height;
+	font-weight: $headline-font-weight;
+	font-family: $headline-font-family;
+	color: $headline-color;
+}
+
+h1 {
+	font-size: $headline-font-size-h1;
+	margin: $headline-margin-h1;
+	&--bigger {
+		font-size: $headline-font-size-h1-bigger;
+		font-weight: $headline-font-weight-h1-bigger;
+		line-height: $headline-line-height-h1-bigger;
+	}
+}
+
+h2 {
+	font-size: $headline-font-size-h2;
+	margin: $headline-margin-h2;
+	&--secondary-color {
+		color: $headline-secondary-color-h2;
+	}
+}
+
+h3 {
+	font-size: $headline-font-size-h3;
+	margin: $headline-margin-h3;
+}
+
+h4 {
+	font-size: $headline-font-size-h4;
+	margin: $headline-margin-h4;
+}
+
+h5 {
+	font-size: $headline-font-size-h5;
+	margin: $headline-margin-h5;
+}
+
+h6 {
+	font-size: $headline-font-size-h6;
+	margin: $headline-margin-h6;
+}
+////   Параграф
+
+@mixin font-size($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
+    @else {
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}
+
+p {
+  @include font-size($paragraph-font-sizes);
+  font-family: $paragraph-font-family;
+  line-height: $paragraph-line-height;
+}
+
+
+/// img
+
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+////// Links 
+
+a {
+	color: $color-link;
+	border-color: $border-link;
+	font-family: $link-font-family;
+	font-size: $link-font-size;
+	&:hover {
+		color: $color-link-hover;
+		border-color: $border-link-hover;
+	}
+}
+//////// List 
+
+.nav-list-inline {
+	vertical-align: middle;
+	li {
+		display: inline-block;
+		margin-right: 30px;
+	}
+}
+
+.list {
+	font-size: 13px;
+	line-height: 28px;
+}
+
+////// ALL 
+
+
+.text-center      { text-align: center;        }
+.text-left        {	text-align: left;          }
+.text-right       { text-align: right;         }
+.text-justify     { text-align: justify;       }
+.text-uppercase   { text-transform: uppercase; }
+.text-lowercase   {	text-transform: lowercase; }
+.text-nowrap      { white-space: nowrap;       }
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

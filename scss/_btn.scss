@@ -1,0 +1,78 @@
+/////// Variables
+
+
+$btn-primary-color:     #6fb048;;
+$btn-secondary-color:   #83a7a5;
+$btn-third-color:       rgba(255,255,255,0.35);
+$btn-color:             #fff;
+
+$btn-succes-color:      #8cc152;
+$btn-warning-color:     #f6bb42;
+$btn-danger-color:      #da4453;
+
+$btn-pd-sm:   10px 12px;
+$btn-pd-md:   15px 22px;
+
+$btn-border-radius:  2px;
+
+//////  Mixins
+
+
+@mixin btn-variants($color, $bg, $border-color) {
+	color: $color;
+	background: $bg;
+	border-color: $border-color;
+	&:hover {
+		background: darken($bg, 10%);
+	}
+}
+
+@mixin btn-size($padding, $font-size, $border-radius, $border-width: 0, $min-width: null) {
+	padding: $padding;
+	font-size: $font-size;
+	border-radius: $border-radius;
+	border-width: $border-width;
+	min-width: $min-width;
+}
+
+@mixin btn-color ($btn-bg-color,$btn-border-color){
+	background: $btn-bg-color;
+		border-color: $btn-border-color;
+		&:hover {
+			background: darken($btn-bg-color, 10%);
+			border-color: darken($btn-border-color, 10%);
+		}
+}
+
+//// Button
+
+.btn {
+	outline: none;
+	cursor: pointer;
+	display: inline-block;
+	white-space: nowrap;
+	color: $btn-color;
+	border-radius: $btn-border-radius;
+	text-transform: uppercase;
+	&--primary {
+		@include btn-color($btn-primary-color,$btn-primary-color);
+	}
+	&--secondary {
+		@include btn-color($btn-secondary-color,$btn-secondary-color);
+	}
+	&--third {
+		@include btn-color($btn-third-color,$btn-third-color);
+	}
+	&--succes {
+		@include btn-color($btn-succes-color,$btn-succes-color);
+	}
+	&--warning {
+		@include btn-color($btn-warning-color,$btn-warning-color);
+	}
+	&--danger {
+		@include btn-color($btn-danger-color,$btn-danger-color);
+	}
+	&--long {
+		min-width: 192px;
+	}
+}
