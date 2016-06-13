@@ -12,6 +12,7 @@ $btn-danger-color:      #da4453;
 
 $btn-pd-sm:   10px 12px;
 $btn-pd-md:   15px 22px;
+$btn-pd-lg:   15px 40px;
 
 $btn-border-radius:  2px;
 
@@ -39,8 +40,8 @@ $btn-border-radius:  2px;
 	background: $btn-bg-color;
 		border-color: $btn-border-color;
 		&:hover {
-			background: darken($btn-bg-color, 10%);
-			border-color: darken($btn-border-color, 10%);
+			background: darken($btn-bg-color, 15%);
+			border-color: darken($btn-border-color, 15%);
 		}
 }
 
@@ -74,5 +75,15 @@ $btn-border-radius:  2px;
 	}
 	&--long {
 		min-width: 192px;
+	}
+	&--sm {
+		@include btn-size ($btn-pd-sm,12px,$btn-border-radius);
+
+	}
+	&--md {
+		@include btn-size($btn-pd-md,14px,$btn-border-radius);
+	}
+	&--lg {
+		@include btn-size($btn-pd-md,14px,$btn-border-radius);
 	}
 }

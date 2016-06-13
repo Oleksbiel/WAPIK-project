@@ -34,7 +34,6 @@ $opacity-xs:            0.2 !default;
 
 
 .block {
-	padding: $block-padding-y $block-padding-x;
 	display: table;
 	width: 100%;
 	table-layout: fixed;
@@ -146,5 +145,8 @@ $opacity-xs:            0.2 !default;
 	}
 	&-lg {
 		padding: $block-padding-y-lg $block-padding-x-lg;
+	}
+	&-border-bottom {
+		border-bottom: 1px solid rgba(255,255,255, 0.2);
 	}
 }

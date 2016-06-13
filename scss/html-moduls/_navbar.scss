@@ -1,0 +1,41 @@
+.navbar {
+	font-family: 'Montserrat', sans-serif;
+	&__text {
+		float: left;
+		margin-top: 10px;
+		border-left: 1px solid rgba(255,255,255, 0.2);
+		margin-left: 25px;
+		padding-left: 25px;
+		color: #fff;
+		.icon-phone {
+			padding-right: 5px;
+		}
+	}
+	&__nav {
+		float: right;
+		padding-top: 10px;
+	}
+	&__item {
+		display: inline-block;
+		padding-right: 30px;
+		&:last-child {
+			padding-right: 40px;
+		}
+
+	}
+	&__link {
+		display: block;
+		text-transform: uppercase;
+	}
+	.btn {
+		float: right;
+	}
+}
+
+.logo {
+	float: left;
+	img {
+		display: block;
+		padding-top: 10px;
+	}
+}

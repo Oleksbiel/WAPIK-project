@@ -9,7 +9,7 @@ $global-line-height:          22px;
 
 $headline-font-family:        'Roboto';
 $headline-font-weight:        400;
-$headline-line-height:        20px;
+$headline-line-height:        21px;
 $headline-color:              #0f5f5c;;
 
 $headline-font-size-h1:       38px;
@@ -36,8 +36,8 @@ $headline-margin-h6:          10px 0;
 
 
 
-$paragraph-font-family:       Helvetica;
-$paragraph-line-height:       15px;
+$paragraph-font-family:       $global-font-family;
+$paragraph-line-height:       24px;
 $paragraph-color:             $global-color;
 $secondary-color:             #0f5f5c;
 $paragraph-font-sizes:  (
@@ -59,7 +59,7 @@ $color-link-visited:  #767676;
 $border-link-visited: #949494;
 $color-link-active:   #fff;
 $border-link-active:  #fff;
-$link-font-family:    Montserrat; 
+$link-font-family:    'Montserrat'; 
 $link-font-size:      13px;
 
 
@@ -163,10 +163,14 @@ a {
 	border-color: $border-link;
 	font-family: $link-font-family;
 	font-size: $link-font-size;
+	text-decoration: none;
 	&:hover {
 		color: $color-link-hover;
 		border-color: $border-link-hover;
 	}
+}
+.link--active {
+	color: $color-link-active;
 }
 //////// List 
 

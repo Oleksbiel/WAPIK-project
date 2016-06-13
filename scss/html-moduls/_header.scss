@@ -1,0 +1,25 @@
+.block {
+	background: url(../images/header-bg.jpg) no-repeat;
+	background-size: cover;
+	background-color: #2d6e70;
+	min-height: 660px;
+	position: relative;
+	&__header {
+		padding: 25px 0;
+		@include clearfix();
+	}
+	&__content {
+		color: #fff;
+	}
+	&__title {
+		color: #fff;
+		margin: 0;
+		padding-top: 200px;
+		padding-bottom: 15px;
+	}
+	&__text {
+		font-size: 16px;
+		padding-bottom: 20px;
+	}
+
+}

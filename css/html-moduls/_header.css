@@ -1,0 +1,8 @@
+.header {
+  background: url(../images/header-bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.header__top {
+  padding: 30px 0;
+}

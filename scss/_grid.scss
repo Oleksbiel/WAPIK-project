@@ -8,15 +8,15 @@
 // Variables
 //
 
-$enable-flex:               true !default;
-$enable-rounded:            true !default;
-$enable-shadows:            true !default;
-$enable-gradients:          true !default;
-$enable-transitions:        true !default;
-$enable-hover-media-query:  true !default;
+$enable-flex:               false !default;
+$enable-rounded:            true  !default;
+$enable-shadows:            true  !default;
+$enable-gradients:          true  !default;
+$enable-transitions:        true  !default;
+$enable-hover-media-query:  true  !default;
 
 
-$developer-mode:            true !default;
+$developer-mode:            false !default;
 
 @if  $developer-mode {
   [class*="col-"] {
@@ -31,11 +31,7 @@ $developer-mode:            true !default;
 //
 // Define your custom responsive grid.
 $grid-breakpoints: (
-  xs: 0,
-  sm: 480px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px
+  xl: 1060px
 ) !default;
 
 // Number of columns in the grid.
@@ -50,10 +46,7 @@ $grid-gutter-width:          30px !default;
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-  sm: 480px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px
+  xl: 1060px
 ) !default;
 
 
