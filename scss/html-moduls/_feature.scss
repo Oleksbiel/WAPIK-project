@@ -1,19 +1,25 @@
-.feature {
-    &__title {}
-    &__icon {
-        font-size: 40px;
-        &--sm {
-            font-size: 20px;
+.features {
+    &__title {
+        &--padding-top{
+            padding-top: 5px;
         }
     }
-    &_description {}
-    &__header {}
-    &__column {
-        display: table;
-        .feature {
-            > * {
-                display: table-cell;
-            }
+    &__icon {
+        font-size: 52px;
+        padding-bottom: 20px;
+        display: block;
+        color: $global-secondary-color;
+        &--sm {
+            font-size: 30px;
+            padding-bottom: 10px;
+            padding-right: 20px;
+            float: left;
         }
+    }
+    &__description {
+
+    }
+    &--padding-bottom {
+        padding-bottom: 60px;
     }
 }

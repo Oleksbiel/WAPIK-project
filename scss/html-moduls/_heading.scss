@@ -1,8 +1,21 @@
 .heading {
 	&__title {
-
+		padding-bottom: 15px;
+        position: relative;
+        &:after {
+            content: '';
+            display: block;
+            height: 1px;
+            width: 65px;
+            border-bottom: 1px solid #6fb048;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
 	}
-	&__desc {
+	&__description {
 		
+	}
+	&--padding-bottom{
+		padding-bottom: 50px;
 	}
 }

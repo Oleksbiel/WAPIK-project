@@ -31,7 +31,11 @@ $developer-mode:            false !default;
 //
 // Define your custom responsive grid.
 $grid-breakpoints: (
-  xl: 1060px
+  xs: 0,
+  sm: 480px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
 ) !default;
 
 // Number of columns in the grid.
