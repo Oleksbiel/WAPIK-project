@@ -1,0 +1,14 @@
+.social__item {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.social__link {
+  width: 30px;
+  height: 30px;
+  border: 50%;
+}
+
+.icon-twitter {
+  background-color: #55acee;
+}

@@ -1,0 +1,59 @@
+.description {
+	&__img {
+		display: block;
+		position: relative;
+    	left: 50%;
+    	transform: translateX(-50%);
+    	&-table {
+    		vertical-align: middle;
+		    height: 385px;
+		    display: table-cell;
+    	}
+	}
+
+	&__inner {
+		vertical-align: middle;
+    	height: 485px;
+    	display: table-cell;
+    	&-height{
+			height: 400px;
+    	}
+	}
+
+	&__title{
+		padding-bottom: 15px;
+	}
+	&__text {
+		padding-bottom: 15px;
+		&-second {
+			font-family: 'Merriweather', serif;
+			font-size: 22px;
+			font-weight: 300;
+			line-height: 40px;
+			padding-bottom: 25px;
+		}
+	}
+	&__list{
+
+	}
+	&__icon{
+		font-size: 26px;
+		color: $global-color;
+		padding-right: 10px;
+		display: inline-block;
+    	vertical-align: middle;
+	}
+	&__item{
+		line-height: 38px;
+	}
+	&__copyright{
+		color: $global-secondary-color;
+		font-weight: 500;
+		display: block;
+		&-second {
+			color: $global-color;
+			font-weight: 400;
+			display: block;
+		}
+	}
+}

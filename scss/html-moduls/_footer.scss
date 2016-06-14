@@ -1,0 +1,55 @@
+.footer{
+	padding-top: 90px;
+	&__title{
+		font-weight: 500;
+	}
+	&__text {
+		padding-bottom: 20px;
+	}
+	&__header{
+		padding-bottom: 50px;
+		border-bottom: 1px solid #eef1ec;
+	}
+	&__bottom{
+		padding: 20px 0;
+		@include clearfix();
+	}
+	&__logo{
+		padding-bottom: 10px;
+	}
+	&__list{
+		line-height: 28px;
+		font-family: 'Roboto'; 
+	}
+	&__item{
+		&--padding-left{
+			padding-left: 15px;
+		}
+	}
+	&__item-second-color{
+		color: $global-third-color;
+	}
+	&__link {
+		color: #83a7a5;
+		&:hover{
+			text-decoration: underline;
+			color: #83a7a5;
+		}
+	}
+	&__icon {
+		position: absolute;
+		right: 15px;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 18px;
+	}
+	&__copyright{
+		font-size: 12px;
+		line-height: 18px;
+		float: left;
+		padding-top: 10px;
+	}
+	&__social{
+		float: right;
+	}
+}

@@ -7,11 +7,12 @@ $global-bg-color:             #fff;
 $global-color:                #83a7a5;
 $global-line-height:          22px;
 $global-secondary-color:      #6fb048;
+$global-third-color:          #0f5f5c;
 
 $headline-font-family:        'Roboto';
 $headline-font-weight:        400;
-$headline-line-height:        21px;
-$headline-color:              #0f5f5c;;
+$headline-line-height:        22px;
+$headline-color:              $global-third-color;
 
 $headline-font-size-h1:       38px;
 $headline-margin-h1:          0px 0px 10px 0px; 
@@ -30,7 +31,7 @@ $headline-font-size-h4:       16px;
 $headline-margin-h4:          0 0 18px 0;
 
 $headline-font-size-h5:       13px;
-$headline-margin-h5:          0px 0px 15px 0px;
+$headline-margin-h5:          0px 0px 10px 0px;
 
 $headline-font-size-h6:       12px;
 $headline-margin-h6:          10px 0;
@@ -102,9 +103,7 @@ h1 {
 h2 {
 	font-size: $headline-font-size-h2;
 	margin: $headline-margin-h2;
-	&--secondary-color {
-		color: $headline-secondary-color-h2;
-	}
+	
 }
 
 h3 {

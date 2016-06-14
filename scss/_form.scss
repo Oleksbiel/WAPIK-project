@@ -12,7 +12,7 @@ $form-error-color:        #a94442;
 
 
 
-$form-pd-sm:     15px 25px 15px 10px;
+$form-pd-sm:     15px 35px 15px 10px;
 $form-pd-md:     15px 0px 15px 20px;
 
 
@@ -43,6 +43,7 @@ $form-group-margin-bottom:  25px;
 .form {
 	&__group {
 		margin-bottom: $form-group-margin-bottom;
+		position: relative;
 	}
 	&__control {
 		display: block;
@@ -60,7 +61,7 @@ $form-group-margin-bottom:  25px;
 		}
 		&--secondary-form {
 			@include form-color-variants($form-color-default,$form-bg-2,null);
-			@include form-size($form-pd-sm,13px,null,3px);
+			@include form-size($form-pd-sm,13px,0,3px);
 		}
 	}
 	&__label {

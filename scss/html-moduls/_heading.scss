@@ -12,10 +12,39 @@
             padding-top: 20px;
         }
 	}
+	&__title-second {
+		font-size: 28px;
+		padding-bottom: 5px;
+	}
+	&__mail{
+		display: block;
+		color: #0f5f5c;
+		font-size: 18px;
+		padding-top: 40px;
+	}
 	&__description {
 		
 	}
 	&--padding-bottom{
 		padding-bottom: 50px;
+	}
+	&--padding-bottom-sm {
+		padding-bottom: 20px;
+	}
+	&--padding-bottom-md {
+		padding-bottom: 30px;
+	}
+	&--padding-bottom-xs {
+		padding-bottom: 10px;
+	}
+	&__icon{
+		color: $global-secondary-color;
+		font-size: 44px;
+		display: inline-block;
+		padding-top: 40px;
+		padding-bottom: 10px;
+	}
+	&--primary-color {
+		color: $headline-secondary-color-h2;
 	}
 }

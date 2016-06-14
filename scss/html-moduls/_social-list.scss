@@ -1,0 +1,68 @@
+.social{
+	&__list{
+
+	}
+	&__item{
+		display: inline-block;
+		padding-right: 10px;
+		&:last-child{
+			padding-right: 0;
+		}
+	}
+	&__link{
+		color: #FFF;
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		position: relative;
+		&:hover{
+    		background: currentColor;
+    		opacity: 0.9;
+    	}
+	}
+	&__icon{
+		font-size: 18px;
+		position: absolute;
+    	top: 50%;
+   	 	left: 50%;
+   	 	transform: translate(-50%, -50%);
+    	display: block;
+
+	}
+	&__tw{
+		background-color: #55acee;
+		transition: all 0.4s;
+		&:hover{
+    		background: lighten(#55acee,10%);
+    	}
+	}
+	&__fb{
+		background-color: #3b5998;
+		transition: all 0.4s;
+		&:hover{
+    		background: lighten(#3b5998,10%);
+    	}
+	}
+	&__inst{
+		background-color: #3f729b;
+		transition: all 0.4s;
+		&:hover{
+    		background: lighten(#3f729b,10%);
+    	}
+	}
+	&__ball {
+		background-color: #ea4c89;
+		transition: all 0.4s;
+		&:hover{
+    		background: lighten(#ea4c89,10%);
+    	}
+	}
+	&__cat{
+		background-color: #333;
+		transition: all 0.4s;
+		&:hover{
+    		background: lighten(#333,10%);
+    	}
+	}
+}

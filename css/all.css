@@ -68,7 +68,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 21px;
+  line-height: 22px;
   font-weight: 400;
   font-family: "Roboto";
   color: #0f5f5c;
@@ -90,10 +90,6 @@ h2 {
   margin: 0px 0px 0px 0px;
 }
 
-h2--secondary-color {
-  color: #6fb048;
-}
-
 h3 {
   font-size: 28px;
   margin: 0;
@@ -106,7 +102,7 @@ h4 {
 
 h5 {
   font-size: 13px;
-  margin: 0px 0px 15px 0px;
+  margin: 0px 0px 10px 0px;
 }
 
 h6 {
@@ -293,7 +289,7 @@ a:hover {
 
 @media (min-width: 1140px) {
   .container {
-    max-width: 1060px;
+    max-width: 1090px;
   }
 }
 
@@ -1482,6 +1478,7 @@ a:hover {
 
 .form__group {
   margin-bottom: 25px;
+  position: relative;
 }
 
 .form__control {
@@ -1509,8 +1506,9 @@ a:hover {
 .form__control--secondary-form {
   color: #83a7a5;
   background: #eef1ec;
-  padding: 15px 25px 15px 10px;
+  padding: 15px 35px 15px 10px;
   font-size: 13px;
+  border-width: 0;
   border-radius: 3px;
 }
 
@@ -1553,7 +1551,7 @@ a:hover {
 .form-inline__control--secondary-form {
   color: #83a7a5;
   background: #eef1ec;
-  padding: 15px 25px 15px 10px;
+  padding: 15px 35px 15px 10px;
   font-size: 13px;
   border-radius: 3px;
 }
@@ -1695,7 +1693,7 @@ a:hover {
 
 @media (min-width: 1140px) {
   .container {
-    max-width: 1060px;
+    max-width: 1090px;
   }
 }
 
@@ -2920,12 +2918,34 @@ a:hover {
   padding: 15px 0;
 }
 
+.block--md {
+  padding: 60px 0;
+}
+
 .block-lg {
   padding: 90px 0;
 }
 
+.block--xl {
+  padding: 140px 0;
+}
+
 .block-border-bottom {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.block--secondary-bg {
+  background-color: #eef1ec;
+}
+
+.block--padding-top {
+  padding-top: 70px;
+}
+
+.block--mod {
+  background-image: url(../images/pre-footer-bg.jpg);
+  background-color: rgba(238, 241, 236, 0.99);
+  background-size: cover;
 }
 
 @font-face {
@@ -3115,8 +3135,44 @@ a:hover {
   padding-top: 20px;
 }
 
+.heading__title-second {
+  font-size: 28px;
+  padding-bottom: 5px;
+}
+
+.heading__mail {
+  display: block;
+  color: #0f5f5c;
+  font-size: 18px;
+  padding-top: 40px;
+}
+
 .heading--padding-bottom {
   padding-bottom: 50px;
+}
+
+.heading--padding-bottom-sm {
+  padding-bottom: 20px;
+}
+
+.heading--padding-bottom-md {
+  padding-bottom: 30px;
+}
+
+.heading--padding-bottom-xs {
+  padding-bottom: 10px;
+}
+
+.heading__icon {
+  color: #6fb048;
+  font-size: 44px;
+  display: inline-block;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.heading--primary-color {
+  color: #6fb048;
 }
 
 .features__title--padding-top {
@@ -3163,4 +3219,272 @@ a:hover {
   background-color: #f2f2f2;
   left: 50%;
   margin-left: -45px;
+}
+
+.description__img {
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.description__img-table {
+  vertical-align: middle;
+  height: 385px;
+  display: table-cell;
+}
+
+.description__inner {
+  vertical-align: middle;
+  height: 485px;
+  display: table-cell;
+}
+
+.description__inner-height {
+  height: 400px;
+}
+
+.description__title {
+  padding-bottom: 15px;
+}
+
+.description__text {
+  padding-bottom: 15px;
+}
+
+.description__text-second {
+  font-family: 'Merriweather', serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 40px;
+  padding-bottom: 25px;
+}
+
+.description__icon {
+  font-size: 26px;
+  color: #83a7a5;
+  padding-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.description__item {
+  line-height: 38px;
+}
+
+.description__copyright {
+  color: #6fb048;
+  font-weight: 500;
+  display: block;
+}
+
+.description__copyright-second {
+  color: #83a7a5;
+  font-weight: 400;
+  display: block;
+}
+
+.price {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.price__card {
+  width: 255px;
+  border: 1px solid #c1d3d2;
+  border-radius: 3px 0 0 3px;
+  display: inline-block;
+  padding: 25px 0px;
+}
+
+.price__card:first-child {
+  margin-right: -5px;
+  border-right: none;
+}
+
+.price__card + .price__card {
+  margin-right: -4px;
+}
+
+.price__title {
+  padding-bottom: 25px;
+  margin: 0;
+  font-weight: 500px;
+  text-transform: uppercase;
+  color: #6fb048;
+}
+
+.price__value {
+  color: #0f5f5c;
+  font-family: Montserrat;
+  font-size: 65px;
+  line-height: 40px;
+  display: block;
+}
+
+.price__value-info {
+  color: #0f5f5c;
+  font-size: 14px;
+  display: block;
+  padding-bottom: 15px;
+}
+
+.price__list {
+  line-height: 28px;
+}
+
+.price__item:last-child {
+  padding-bottom: 5px;
+}
+
+.footer {
+  padding-top: 90px;
+}
+
+.footer__title {
+  font-weight: 500;
+}
+
+.footer__text {
+  padding-bottom: 20px;
+}
+
+.footer__header {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #eef1ec;
+}
+
+.footer__bottom {
+  padding: 20px 0;
+}
+
+.footer__bottom:before, .footer__bottom:after {
+  content: " ";
+  display: table;
+}
+
+.footer__bottom:after {
+  clear: both;
+}
+
+.footer__logo {
+  padding-bottom: 10px;
+}
+
+.footer__list {
+  line-height: 28px;
+  font-family: 'Roboto';
+}
+
+.footer__item--padding-left {
+  padding-left: 15px;
+}
+
+.footer__item-second-color {
+  color: #0f5f5c;
+}
+
+.footer__link {
+  color: #83a7a5;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+  color: #83a7a5;
+}
+
+.footer__icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+.footer__copyright {
+  font-size: 12px;
+  line-height: 18px;
+  float: left;
+  padding-top: 10px;
+}
+
+.footer__social {
+  float: right;
+}
+
+.social__item {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.social__item:last-child {
+  padding-right: 0;
+}
+
+.social__link {
+  color: #FFF;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.social__link:hover {
+  background: currentColor;
+  opacity: 0.9;
+}
+
+.social__icon {
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+.social__tw {
+  background-color: #55acee;
+  transition: all 0.4s;
+}
+
+.social__tw:hover {
+  background: #83c3f3;
+}
+
+.social__fb {
+  background-color: #3b5998;
+  transition: all 0.4s;
+}
+
+.social__fb:hover {
+  background: #4c70ba;
+}
+
+.social__inst {
+  background-color: #3f729b;
+  transition: all 0.4s;
+}
+
+.social__inst:hover {
+  background: #548cb9;
+}
+
+.social__ball {
+  background-color: #ea4c89;
+  transition: all 0.4s;
+}
+
+.social__ball:hover {
+  background: #ef7aa7;
+}
+
+.social__cat {
+  background-color: #333;
+  transition: all 0.4s;
+}
+
+.social__cat:hover {
+  background: #4d4d4d;
 }

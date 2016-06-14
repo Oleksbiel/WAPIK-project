@@ -7,8 +7,14 @@ $block-padding-x-xs:    0 !default;
 $block-padding-y-sm:    15px !default;
 $block-padding-x-sm:    0 !default;
 
+$block-padding-y-md:    60px !default;
+$block-padding-x-md:    0 !default;
+
 $block-padding-y-lg:    90px !default;
 $block-padding-x-lg:    0 !default;
+
+$block-padding-y-xl:    140px !default;
+$block-padding-x-xl:    0 !default;
 
 $block-inverse-color:   #fff !default;
 $block-title-size:      36px !default;
@@ -21,6 +27,8 @@ $opacity-lg:            0.9 !default;
 $opacity-md:            0.8 !default;
 $opacity-sm:            0.4 !default;
 $opacity-xs:            0.2 !default;
+
+$secondary-color-bg:   #eef1ec;
 
 %block-absolute {
 	position: absolute;
@@ -143,10 +151,27 @@ $opacity-xs:            0.2 !default;
 	&-sm {
 		padding: $block-padding-y-sm $block-padding-x-sm;
 	}
+	&--md {
+		padding: $block-padding-y-md $block-padding-x-md;
+	}
 	&-lg {
 		padding: $block-padding-y-lg $block-padding-x-lg;
 	}
+	&--xl {
+		padding: $block-padding-y-xl $block-padding-x-xl;
+	}
 	&-border-bottom {
 		border-bottom: 1px solid rgba(255,255,255, 0.2);
+	}
+	&--secondary-bg {
+		background-color: $secondary-color-bg;
+	}
+	&--padding-top {
+		padding-top: 70px;
+	}
+	&--mod {
+		background-image: url(../images/pre-footer-bg.jpg);
+		background-color: rgba(238, 241, 236, 0.99);
+		background-size: cover;
 	}
 }
