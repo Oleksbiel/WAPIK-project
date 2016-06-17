@@ -31,11 +31,11 @@ $developer-mode:            false !default;
 //
 // Define your custom responsive grid.
 $grid-breakpoints: (
-  xs: 0,
+  xs: 320px,
   sm: 480px,
   md: 720px,
   lg: 960px,
-  xl: 1140px
+  xl: 1090px
 ) !default;
 
 // Number of columns in the grid.
@@ -50,6 +50,10 @@ $grid-gutter-width:          30px !default;
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
+  xs: 500px,
+  sm: 500px,
+  md: 720px,
+  lg: 960px,
   xl: 1090px
 ) !default;
 
